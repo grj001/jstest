@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<!-- 同级static目录下,路径写法 -->
+<script type="text/javascript"
+	src="static/js/jquery-1.12.4.min.js">
+</script>
+<script type="text/javascript">
+	window.onload = function (){
+		//原声js通过id获取元素
+		var element = document.getElementById("one");
+		//设置元素的属性值
+		element.value = "你好";
+		//使用jq获取id为one的元素
+		var $element = $("#two");
+		//将id为one的元素的值设置为好好学习
+		$element.val("好好学习");
+		}
+</script>
+</head>
+<body>
+	<input type="text" value="123" id="one">
+	<input type="text" value="456" id="two">
+</body>
+</html>
